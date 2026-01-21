@@ -185,19 +185,75 @@ nav .menu a{
     max-width: 60px;
     margin-bottom: 16px;
 }
-.choose-card h4{
+.choose-card h4 ,
+.episodes-card h4 ,
+.host-info h4{
     margin-bottom: 16px;
     color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 700;
 }
-.choose-card p{
+.choose-card p ,
+.episodes-card p ,
+.featured-host p{
     color: #FFFFFF;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
 #featured{
     background-color: #1A0B2E;
+    padding: 120px 200px;
+}
+.featured-container{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
 
+}
+.featured-episodes{
+    margin-bottom: 120px;
+}
+.featured-episodes-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.episodes-card{
+    max-width: 380px;
+    background-color: #250D44;
+    border-radius: 20px;
+    
+}
+.episodes-card iframe{
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+}
+.featured-host-intro{
+    max-width: 1200px;
+    background-color: #351165;
+    border-radius: 40px;
+    padding: 48px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.social-icon{
+    display: flex;
+    justify-items:flex-start;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 8px;
+    
+}
+.social-icon li{
+    border: 1px solid rgba(192, 92, 192, 0.671);
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 10px;
+}
+.footer{
+    background-image: ./;
 }
