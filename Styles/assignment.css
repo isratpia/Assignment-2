@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+#mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    display: none;
+}
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -10,7 +17,7 @@
 header{
     background-color: #1A0B2E;
 }
-nav{
+#desktop{
     width: 100%;
     max-width: 1600;
     display: flex;
@@ -23,12 +30,12 @@ nav{
     color: #FFFFFF;
     font-size: 1.8rem;
 }
-nav .menu{
+#desktop .menu{
     display:flex;
     list-style-type: none;
     gap: 2rem;
 }
-nav .menu a{    
+#desktop .menu a{    
     color:#FFFFFF;
     font-size: 1rem;
     text-decoration: none;
@@ -337,6 +344,12 @@ nav .menu a{
 
 
 @media screen and (max-width:576px) {
+    #mobile{
+        display: flex;
+    }
+    #desktop{
+        display: none;
+    }
     nav{
         padding: 10px;
     }
