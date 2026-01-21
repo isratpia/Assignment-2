@@ -118,7 +118,9 @@ nav .menu a{
     text-align: center;
 }
 .about-heading h2 ,
-.choose-container h2{
+.choose-container h2 ,
+.featured-episodes h2 ,
+.featured-host h2{
     font-size: 3rem;
     font-weight: 700;
     color: #FFFFFF;
@@ -154,3 +156,48 @@ nav .menu a{
     background-color: #230E3D;
     padding: 120px 200px;
 }    
+.card-container{
+    max-width: 1200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+}
+.choose-card{
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 40px;
+}
+.long-card{
+    grid-column: span 2;
+}
+.wide-card{
+    grid-row: span 2;
+}
+.normal-card{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.choose-card img{
+    max-width: 60px;
+    margin-bottom: 16px;
+}
+.choose-card h4{
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.choose-card p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+#featured{
+    background-color: #1A0B2E;
+
+}
