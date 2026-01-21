@@ -45,7 +45,6 @@ nav .menu a{
     color: #FFFFFF;
 }
 #banner{
-    border: 1px solid red;
     width: 100%;
     min-height:  80vh;
     max-width: 1600px;
