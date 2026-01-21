@@ -195,7 +195,8 @@ nav .menu a{
 }
 .choose-card p ,
 .episodes-card p ,
-.featured-host p{
+.featured-host p ,
+.social-link p{
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 100;
@@ -254,6 +255,41 @@ nav .menu a{
     border-radius: 50%;
     padding: 10px;
 }
-.footer{
-    background-image: ./;
+#foot{
+    background-image: url(../assets/footer-bg.png);
+    width: 100%;
+    max-width: 1600px;
 }
+.social-link{
+    max-width: 1360px;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.social-link h1{
+    /* max-width: 410px; */
+    font-size: 5rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+.social-link ul{
+    max-width: 544px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 40px;
+}
+.social-link li{
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    gap: 40px;
+}
+
+
