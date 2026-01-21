@@ -36,10 +36,10 @@ nav .menu a{
     font-weight: 500;
 }
 .linear{
-    background: linear-gradient(1500deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1)100%);
+    background: linear-gradient(50deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1)100%);
 }
 .linear-t{
-    background: linear-gradient(150deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1)100%);
+    background: linear-gradient(50deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1)100%);
     background-clip: text;
     color: transparent;
     display: inline-block
@@ -74,7 +74,11 @@ nav .menu a{
     position: absolute;
     left: 47%;
     top: 33%;
+    transition: transform 1s;
 }
+.microphone:hover{
+    transform: rotate(360deg) scale(0.5) translate(350px) ;
+}   
 .badge{
     font-size: 1.125rem;
     font-weight: 600;
@@ -282,11 +286,12 @@ nav .menu a{
     gap: 8px;
     
 }
-.social-icon li{
+.social-icon li a{
     border: 1px solid rgba(192, 92, 192, 0.671);
     background-color: transparent;
+    width: 16px;
+    padding: 12px 11px 10px;
     border-radius: 50%;
-    padding: 10px;
 }
 #foot{
     background-image: url(../assets/footer-bg.png);
@@ -334,7 +339,7 @@ nav .menu a{
         grid-column: span 1;
     }
     #choose {
-        padding: 60px;
+        padding: 40px 20px;
     }
 }    
     
