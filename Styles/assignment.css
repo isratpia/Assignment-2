@@ -35,10 +35,16 @@ nav .menu a{
     line-height: 120%;
     font-weight: 500;
 }
+.linear{
+    background: linear-gradient(1500deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1)100%);
+}
+.linear-t{
+    background: linear-gradient(150deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1)100%);
+    background-clip: text;
+    color: transparent;
+    display: inline-block
+}
 .btn{
-    background-color: linear-gradient
-    (90deg, #F7E93F, #FB09B4, #9100F8);
-    border: none;
     border-radius: 10000px;
     padding: 12px 18px;
     font-size: 1rem;
@@ -47,7 +53,6 @@ nav .menu a{
 #banner{
     width: 100%;
     min-height:  80vh;
-    max-width: 1600px;
     background-image: url(../assets/hero-bg.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -61,9 +66,25 @@ nav .menu a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 550px;
     margin: 101px auto;
     text-align: center;
+
+}
+.microphone{
+    position: absolute;
+    left: 47%;
+    top: 33%;
+}
+.badge{
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    color: #1A0B2E;
+    background-color: #00FF88;
+    position: absolute;
+    left: 53%;
+    top: 25%;
 }
 .banner-img{
     background-image: url(../assets/hero-circle.png);
@@ -97,6 +118,12 @@ nav .menu a{
     border-radius: 10000px;
     background-color: transparent;
     padding: 12px 20px;
+}
+.btn:hover{
+    color: #33067cb2;
+}
+.green-btn:hover{
+    background-color: #d5d6cb;
 }
 #about{
     padding: 50px 200px 120px;
@@ -158,22 +185,29 @@ nav .menu a{
 .card-container{
     max-width: 1200px;
     display: grid;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
+    justify-content: center;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 250px);
+    grid-template-rows: repeat(3, auto);
 }
 .choose-card{
     background-color: #351165;
     padding: 40px;
     border-radius: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.long-card{
+.choose-card:hover{
+  transform: translateY(-5px);
+  background: #3a215a; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+    
+.wide-card{
     grid-column: span 2;
 }
-.wide-card{
+.long-card{
     grid-row: span 2;
 }
 .normal-card{
@@ -257,7 +291,6 @@ nav .menu a{
 #foot{
     background-image: url(../assets/footer-bg.png);
     width: 100%;
-    max-width: 1600px;
 }
 .social-link{
     max-width: 1360px;
@@ -269,7 +302,6 @@ nav .menu a{
     align-items: center;
 }
 .social-link h1{
-    /* max-width: 410px; */
     font-size: 5rem;
     font-weight: 900;
     color: #FFFFFF;
@@ -290,5 +322,25 @@ nav .menu a{
     margin-bottom: 32px;
     gap: 40px;
 }
+
+
+@media screen and (max-width:576px){   
+    .card-container {
+        grid-template-columns: 1fr; 
+    }
+    .tall-card, 
+    .wide-card {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    #choose {
+        padding: 60px;
+    }
+}    
+    
+
+
+
+    
 
 
