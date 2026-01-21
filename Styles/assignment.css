@@ -257,6 +257,13 @@ nav .menu a{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.featured-episodes-card:hover{
+  transform: translateY(-5px);
+  background: #3a215a; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 .episodes-card{
     max-width: 380px;
@@ -329,7 +336,59 @@ nav .menu a{
 }
 
 
-@media screen and (max-width:576px){   
+@media screen and (max-width:576px) {
+    nav{
+        padding: 10px;
+    }
+    #banner{
+        padding: 20px 10px;
+    }
+    .banner-container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .banner-btn{
+        display: flex;
+        flex-direction: row; 
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+    .banner-img{
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+    }
+    .microphone{
+        position: absolute;
+        top: 28%;
+        left: 31%;
+    }
+    .badge{
+        position: absolute;
+        top: 10%; 
+        left: 70%;   
+    }
+    #about , #featured , #choose {
+        padding: 20px 10px;  
+    } 
+    .about-container , .featured-container {
+        width: 95%;
+    }
+    .about-heading h2, .choose-container h2, .featured-episodes h2, .featured-host h2 , .logo h2{
+        font-size: 2rem;
+    }
+    .about-info , .featured-episodes-card , .featured-host-intro {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .info-card h4 {
+        font-size: 2rem;
+    }
+    .info-card p , .social-link , .banner-btn{
+        font-size: 0.8rem;
+    }
     .card-container {
         grid-template-columns: 1fr; 
     }
@@ -338,8 +397,17 @@ nav .menu a{
         grid-row: span 1;
         grid-column: span 1;
     }
-    #choose {
-        padding: 40px 20px;
+    .social-link{
+        padding: 20px;
+        text-align: center;
+    }
+    .social-link ul{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .social-link h1{
+        font-size: 3rem;
     }
 }    
     
